@@ -1,1 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Força do Agro | O Motor do Mundo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <!-- Cabeçalho / Menu -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">Agro<span>Vital</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#importancia">Importância</a></li>
+                    <li><a href="#pilares">Pilares</a></li>
+                    <li><a href="#sustentabilidade">Sustentabilidade</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção Hero (Banner Principal) -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>Alimentando o Mundo, Movendo a Economia</h1>
+            <p>Descubra como o agronegócio molda o nosso dia a dia, gera empregos e impulsiona a inovação no campo e na cidade.</p>
+            <a href="#importancia" class="btn">Saiba Mais</a>
+        </div>
+    </section>
+
+    <!-- Seção de Introdução / Importância -->
+    <section id="importancia" class="section bg-light">
+        <div class="container text-center">
+            <h2>Por que o Agro é fundamental?</h2>
+            <p class="subtitle">Mais do que plantar e colher, o agronegócio é a base da sobrevivência e do desenvolvimento global.</p>
+            
+            <div class="grid-3">
+                <div class="card">
+                    <h3>Segurança Alimentar</h3>
+                    <p>Garante o abastecimento de comida para bilhões de pessoas diariamente, transformando recursos naturais em nutrição essencial.</p>
+                </div>
+                <div class="card">
+                    <h3>Pilar Econômico</h3>
+                    <p>Responsável por grande parte do PIB nacional, gerando bilhões em exportações e mantendo a balança comercial positiva.</p>
+                </div>
+                <div class="card">
+                    <h3>Geração de Empregos</h3>
+                    <p>Do campo à indústria de tecnologia, o setor emprega milhões de pessoas diretamente e indiretamente no mundo todo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Dados / Pilares -->
+    <section id="pilares" class="section dark-section">
+        <div class="container">
+            <h2 class="text-center">O Agro em Números e Tecnologia</h2>
+            <div class="grid-2">
+                <div>
+                    <h3>Inovação Constante</h3>
+                    <p>O campo hoje é altamente tecnológico. Drones, satélites, inteligência artificial e maquinários autônomos garantem a máxima eficiência, reduzindo o desperdício e otimizando a produção de grãos, carnes e fibras.</p>
+                </div>
+                <div>
+                    <h3>Impacto Direto</h3>
+                    <p>Você sabia que tudo o que consumimos passa pelo Agro? Desde a roupa de algodão que você veste, o biocombustível no seu carro, até o café da manhã. O agronegócio conecta a terra diretamente à sua rotina urbana.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Sustentabilidade -->
+    <section id="sustentabilidade" class="section">
+        <div class="container text-center">
+            <h2>Compromisso com o Futuro</h2>
+            <p class="subtitle">O grande desafio do século é produzir mais utilizando menos recursos. O agro moderno caminha lado a lado com a sustentabilidade.</p>
+            <blockquote class="highlight-quote">
+                "Preservar o meio ambiente não é uma alternativa para o Agro, é a garantia da sua própria sobrevivência."
+            </blockquote>
+            <p>Através do plantio direto, rotação de culturas e a integração lavoura-pecuária-floresta (ILPF), o setor busca regenerar o solo e mitigar as emissões de carbono.</p>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 AgroVital. Criado para valorizar quem alimenta o mundo.</p>
+        </div>
+    </footer>
+
+</body>
+</html>/* Configurações Gerais / Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-color: #2c5e3b; /* Verde Agro */
+    --secondary-color: #8c6239; /* Tom de Terra */
+    --dark-color: #1e241f;
+    --light-color: #f4f7f5;
+    --white: #ffffff;
+}
+
+body {
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.text-center { text-align: center; }
+.section { padding: 80px 0; }
+.bg-light { background-color: var(--light-color); }
+
+h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+}
+
+/* Menu de Navegação */
+header {
+    background-color: var(--white);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.logo span {
+    color: var(--secondary-color);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li { margin-left: 20px; }
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--dark-color);
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+/* Banner Principal (Hero) */
+.hero {
+    background: url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1920') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: var(--white);
+    margin-top: 60px;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #1e4229;
+}
+
+/* Grid de Layouts */
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+}
+
+/* Cards */
+.card {
+    background: var(--white);
+    padding: 40px 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border-bottom: 4px solid var(--secondary-color);
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    color: var(--dark-color);
+}
+
+/* Seção Escura (Pilares) */
+.dark-section {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.dark-section h2, .dark-section h3 {
+    color: var(--white);
+    margin-bottom: 15px;
+}
+
+/* Citação / Sustentabilidade */
+.highlight-quote {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: var(--secondary-color);
+    margin: 30px 0;
+    font-weight: 500;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--dark-color);
+    color: #aaa;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 0.9rem;
+}
+
+/* Responsividade Básica */
+@media (max-width: 768px) {
+    .header-container { flex-direction: column; }
+    nav ul { margin-top: 15px; }
+    .hero h1 { font-size: 2.5rem; }
+}
